@@ -1,29 +1,30 @@
+/* Resetting default margin, padding, and box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; /* Setting default font family */
 }
-
+/* Smooth scrolling behavior for HTML */
 html {
   scroll-behavior: smooth;
 }
-
+/* Setting background color for the body */
 body {
   background: #f2f2f2;
 }
-
+/* Styling for the fixed header */
 header {
-  position: fixed;
+  position: fixed; /* Fixing the header at the top */
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 5; /* Ensuring it's above other content */
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #333;
+  background: #333; /* Setting background color */
 }
-
+/* Styling for the navigation bar */
 .navbar {
   display: flex;
   padding: 0 10px;
@@ -32,32 +33,32 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
+/* Hiding the menu toggler input */
 .navbar input#menu-toggler {
   display: none;
 }
-
+/* Styling for the hamburger button */
 .navbar #hamburger-btn {
   cursor: pointer;
   display: none;
 }
-
+/* Styling for the links in the navbar */
 .navbar .all-links {
   display: flex;
   align-items: center;
 }
-
+/* Styling for list items in the navbar */
 .navbar .all-links li {
   position: relative;
   list-style: none;
 }
-
+/* Styling for the logo in the navbar */
 .navbar .logo a {
   display: flex;
   align-items: center;
   margin-left: 0;
 }
-
+/* Styling for links in header and footer */
 header a, footer a {
   margin-left: 40px;
   text-decoration: none;
@@ -66,21 +67,21 @@ header a, footer a {
   padding: 20px 0;
   display: inline-block;
 }
-
+/* Hover effect for links */
 header a:hover, footer a:hover {
-  color: #ddd;
+  color: #ddd; /* Changing color on hover */
 }
-
+/* Styling for the homepage section */
 .homepage {
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
   width: 100%;
   position: relative;
-  background: url("guitar.jpg");
+  background: url("guitar.jpg"); /* Background image */
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
 }
-
+/* Overlay on homepage background */
 .homepage::before {
   content: "";
   position: absolute;
@@ -88,9 +89,9 @@ header a:hover, footer a:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
 }
-
+/* Styling for content within homepage */
 .homepage .content {
   display: flex;
   height: 85%;
@@ -99,56 +100,56 @@ header a:hover, footer a:hover {
   justify-content: center;
   flex-direction: column;
 }
-
+/* Styling for heading in homepage content */
 .homepage .content h1 {
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-
+/* Styling for text within homepage content */
 .homepage .content .text {
   margin-bottom: 50px;
-  color: #fff;
+  color: #fff;  /* Text color */
   font-size: 20px;
   text-align: center;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Text shadow */
 }
-
+/* Styling for links within content */
 .content a {
-  color: #000;
+  color: #000; /* Link color */
   display: block;
   text-transform: uppercase;
   font-size: 18px;
   margin: 0 10px;
   padding: 10px 30px;
   border-radius: 5px;
-  background: #fff;
-  border: 2px solid #fff;
-  transition: 0.4s ease;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: #fff; /* Background color */
+  border: 2px solid #fff; /* Border */
+  transition: 0.4s ease; /* Transition effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Box shadow */
   text-decoration: none;
 }
-
+/* Hover effect for links */
 .content a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.3);
+  color: #fff; /* Changing color on hover */
+  background: rgba(255,255,255,0.3); /* Changing background color on hover */
 }
-
+/* Styling for sections */
 section {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 80px 0 0;
 }
-
+/* Styling for section headings */
 section h2 {
   font-size: 2rem;
 }
-
+/* Styling for paragraph within sections */
 section > p {
   text-align: center;
 }
-
+/* Styling for card containers within sections */
 section .cards {
   display: flex;
   flex-wrap: wrap;
@@ -157,56 +158,57 @@ section .cards {
   padding: 0 10px;
   justify-content: space-between;
 }
-
+/* Styling for portfolio section */
 section.portfolio {
   margin: 0 auto;
   max-width: 1200px;
 }
-
+/* Styling for age and birth info within portfolio */
 .portfolio .age-birth {
   text-align: left;
   width: 100%;
   margin-top: 30px;
 }
-
+/* Styling for headings within portfolio */
 .portfolio h3 {
   margin: 30px 0 10px;
 }
-
+/* Styling for educational background within portfolio */
 .portfolio .edback {
   text-align: left;
   width: 100%;
 }
-
+/* Styling for team within portfolio */
 .portfolio .team ul {
   padding-left: 20px;
 }
-
+/* Styling for cards within sections */
 section .cards .card {
-  background: #fff;
+  background: #fff; /* Background color */
   padding: 40px 15px;
   list-style: none;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04); /* Box shadow */
   margin-bottom: 40px;
   width: calc(100% / 3 - 30px);
   text-align: center;
 }
+/* Styling for images within cards */
 section .card img {
     height: 120px;
     width: 120px;
     border-radius: 50%;
     margin-bottom: 20%;
 }
-
+/* Styling for paragraphs within cards */
 section .card p {
     margin-top: 5px;
 }
-
+/* Styling for cards within portfolio section */
 .portfolio .cards .card {
   padding: 0 0 20px;
 }
-
+/* Styling for images within portfolio cards */
 .portfolio .card img {
   width: 100%;
   padding-bottom: 10px;
@@ -214,7 +216,7 @@ section .card p {
   object-fit: cover;
   border-radius: 7px;
 }
-
+/* Styling for paragraphs within cards */
 .cards .card p {
   padding: 0 15px;
   margin-top: 5px;
